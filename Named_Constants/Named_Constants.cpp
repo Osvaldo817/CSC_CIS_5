@@ -13,6 +13,9 @@ int main()
 	std::cout << "MAXIMUM_SEATS=" << MAXIMUM_SEATS << std::endl;
 	std::cout << "PI times 2=" << TWO_PI << std::endl;
 	
+	PI=3.14;
+	std::cout << "PI=" << PI << std::endl;
+	
 	// return from main function
 	return 0;
 }

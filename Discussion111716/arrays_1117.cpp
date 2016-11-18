@@ -5,7 +5,7 @@ using namespace std;
 
 // function prototype
 int total(int a[], int sz);
-void random_fill(int a[], int sz);
+void random_fill(int a[], int sz, int minValue, int maxValue);
 void output_array(int a[], int sz);
 
 //////////////////////////////////////////////////////////////////

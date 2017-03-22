@@ -11,11 +11,15 @@ int main()
    cin >> choice;
    switch (choice)
    {
-      case 'A': cout << "You entered A.\n";
+      case 'A': 
+      			break;
+	  case 'a': cout << "You entered A.\n";
                 break;
-      case 'B': cout << "You entered B.\n";
+      case 'B': 
+	  case 'b': cout << "You entered B.\n";
                 break;
-      case 'C': cout << "You entered C.\n";
+      case 'C': 
+	  case 'c': cout << "You entered C.\n";
                 break;
       default:  cout << "You did not enter A, B, or C!\n";
    }

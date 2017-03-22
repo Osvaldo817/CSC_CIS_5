@@ -16,6 +16,7 @@ int main()
       case 'A': cout << "You entered A.\n";
       case 'B': cout << "You entered B.\n";
       case 'C': cout << "You entered C.\n";
+      			break;
       default:  cout << "You did not enter A, B, or C!\n";
    }
    return 0;

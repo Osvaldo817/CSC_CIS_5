@@ -11,7 +11,7 @@ int main()
              C_SCORE = 70,
              D_SCORE = 60,
              MIN_SCORE = 0,    // Minimum valid score
-             MAX_SCORE = 100;  // Maximum valid score
+             MAX_SCORE = 102;  // Maximum valid score
 
    int testScore;  // To hold a numeric test score
 

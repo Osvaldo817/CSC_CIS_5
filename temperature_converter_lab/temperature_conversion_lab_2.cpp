@@ -35,13 +35,14 @@ int main()
 	switch (choice) // choice is our expression we are evaluating
 	{
 		case '1': // the case user chooses choice 1
+					// input validation, fahrenheit degrees must be greater than or equal to -459.63
 					{
 						bool invalidInput = true;
 						bool isNumber;
 						
 						while ( invalidInput )
 						{
-							cout << "Enter fahrenheit degrees (>= -459.63): ";
+							cout << "Enter fahrenheit degrees (must be greater than or equal to -459.63): ";
 							if ( cin >> fahrenheit ) isNumber=true;						
 							else isNumber=false;
 								
@@ -55,20 +56,61 @@ int main()
 						}
 					}
 					
+					// do conversion
 					celsius = (fahrenheit - 32) / 1.8;
 					cout << setw(9)	<< fahrenheit << " degrees fahrenheit is ";
 					cout << setw(9) << celsius << " degrees celsius" << endl;
 					break;
 		case '2': // the case user chooses choice 2
-					cout << "Enter celsius degrees: ";
-					cin >> celsius;
+					// input validation, celsius degrees must be greater than or equal to -273.13
+					{
+						bool invalidInput = true;
+						bool isNumber;
+						
+						while ( invalidInput )
+						{
+							cout << "Enter celsius degrees (must be greater than or equal to -273.13): ";
+							if ( cin >> celsius ) isNumber=true;						
+							else isNumber=false;
+								
+							if ( isNumber==true && celsius >= -273.13 ) invalidInput=false;
+							else
+							{
+								cout << "Invalid Entry! " << endl;
+								cin.clear();
+								cin.ignore(numeric_limits<streamsize>::max(),'\n');
+							}
+						}
+					}
+					
+					// do conversion
 					fahrenheit = celsius * 1.8 + 32;					
 					cout << setw(9) << celsius << " degrees celsius is ";
 					cout << setw(9)	<< fahrenheit << " degrees fahrenheit" << endl;
 					break;
 		case '3': // the case user chooses choice 3
-					cout << "Enter fahrenheit degrees: ";
-					cin >> fahrenheit;
+					// input validation, fahrenheit degrees must be greater than or equal to -459.63
+					{
+						bool invalidInput = true;
+						bool isNumber;
+						
+						while ( invalidInput )
+						{
+							cout << "Enter fahrenheit degrees (must be greater than or equal to -459.63): ";
+							if ( cin >> fahrenheit ) isNumber=true;						
+							else isNumber=false;
+								
+							if ( isNumber==true && fahrenheit >= -459.63 ) invalidInput=false;
+							else
+							{
+								cout << "Invalid Entry! " << endl;
+								cin.clear();
+								cin.ignore(numeric_limits<streamsize>::max(),'\n');
+							}
+						}
+					}
+					
+					// do conversion
 					celsius = (fahrenheit - 32) / 1.8;
 					kelvin = celsius + 273.13;
 					
@@ -76,8 +118,28 @@ int main()
 					cout << setw(9) << kelvin << " degrees kelvin" << endl;
 					break;
 		case '4': // the case user chooses choice 4
-					cout << "Enter kelvin degrees: ";
-					cin >> kelvin;
+					// input validation, kevin degrees must be greater than or equal to 0.0
+					{
+						bool invalidInput = true;
+						bool isNumber;
+						
+						while ( invalidInput )
+						{
+							cout << "Enter kelvin degrees (must be greater than or equal to 0.0): ";
+							if ( cin >> kelvin ) isNumber=true;						
+							else isNumber=false;
+								
+							if ( isNumber==true && kelvin >= 0.0 ) invalidInput=false;
+							else
+							{
+								cout << "Invalid Entry! " << endl;
+								cin.clear();
+								cin.ignore(numeric_limits<streamsize>::max(),'\n');
+							}
+						}
+					}
+					
+					// do conversion
 					celsius = kelvin - 273.13;
 					
 					fahrenheit = celsius * 1.8 + 32;					
@@ -85,16 +147,56 @@ int main()
 					cout << setw(9)	<< fahrenheit << " degrees fahrenheit" << endl;
 					break;
 		case '5': // the case user chooses choice 5
-					cout << "Enter celsius degrees: ";
-					cin >> celsius;
+					// input validation, celsius degrees must be greater than or equal to -273.13
+					{
+						bool invalidInput = true;
+						bool isNumber;
+						
+						while ( invalidInput )
+						{
+							cout << "Enter celsius degrees (must be greater than or equal to -273.13): ";
+							if ( cin >> celsius ) isNumber=true;						
+							else isNumber=false;
+								
+							if ( isNumber==true && celsius >= -273.13 ) invalidInput=false;
+							else
+							{
+								cout << "Invalid Entry! " << endl;
+								cin.clear();
+								cin.ignore(numeric_limits<streamsize>::max(),'\n');
+							}
+						}
+					}
+					
+					// do conversion
 					kelvin = celsius + 273.13;
 					
 					cout << setw(9)	<< celsius << " degrees celsius is ";
 					cout << setw(9) << kelvin << " degrees kelvin" << endl;
 					break;
 		case '6': // the case user chooses choice 6
-					cout << "Enter kelvin degrees: ";
-					cin >> kelvin;
+					// input validation, kevin degrees must be greater than or equal to 0.0
+					{
+						bool invalidInput = true;
+						bool isNumber;
+						
+						while ( invalidInput )
+						{
+							cout << "Enter kelvin degrees (must be greater than or equal to 0.0): ";
+							if ( cin >> kelvin ) isNumber=true;						
+							else isNumber=false;
+								
+							if ( isNumber==true && kelvin >= 0.0 ) invalidInput=false;
+							else
+							{
+								cout << "Invalid Entry! " << endl;
+								cin.clear();
+								cin.ignore(numeric_limits<streamsize>::max(),'\n');
+							}
+						}
+					}
+					
+					// do conversion
 					celsius = kelvin - 273.13;
 					
 					cout << setw(9) << kelvin << " degrees kelvin is ";

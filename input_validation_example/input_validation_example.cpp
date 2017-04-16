@@ -21,7 +21,9 @@ int main()
 		// the >> operator with the cin object will return true if a value was successfully extracted
 		// from the keyboard and stored in the variable, otherwise it will return false if non valid
 		// characters are entered
-		validInput = cin >> value;
+		// validInput = cin >> value; // commented out 4/16/17 for alternative version
+		cin >> value;
+		validInput = cin.good(); // the good() function returns true if the input was good
 		
 		// if validInput is true AND the input value is in the range specified in our prompt, break the loop
 		if ( (value >= 1 && value <= 10) && validInput ) break;

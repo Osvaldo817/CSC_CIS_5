@@ -1,3 +1,8 @@
+// If you need to do "kitty cat" proof input, feel free to use
+// the getInteger, or getFloat functions in your program (make sure
+// to properly cite that you are using this code provided). You must add
+// #include <limits> to your program in order to use the functions correctly.
+//
 #include <iostream>
 #include <string>
 #include <limits>
@@ -57,7 +62,7 @@ int getInteger(string prompt)
 			// the statement ignores either the number of characters returned by the max() function (which
 			// is a 64 bit integer, OR the '\n' return/newline character; which ever happens first. hint:
 			// do 2 to the 64 power on a calculator and that is what max() returns, ALOT OF CHARACTERS!!!
-			//cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
+			cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
 		}
 	} while (true);
 } // end of getInteger function
@@ -97,7 +102,7 @@ float getFloat(string prompt)
 			// the statement ignores either the number of characters returned by the max() function (which
 			// is a 64 bit integer, OR the '\n' return/newline character; which ever happens first. hint:
 			// do 2 to the 64 power on a calculator and that is what max() returns, ALOT OF CHARACTERS!!!
-			//cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
+			cin.ignore(std::numeric_limits<streamsize>::max(),'\n');
 		}
 	} while (true);
 } // end of getFloat function

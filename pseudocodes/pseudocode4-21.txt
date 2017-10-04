@@ -1,0 +1,113 @@
+1. Use the following libraries:
+
+	iostream
+	iomanip
+
+2. Named constants for time ranges:
+
+	MIN_SECONDS = 0.0
+	MAX_SECONDS = 30.0
+
+3. Named constants for speeds:
+
+	CARBON_DIOXIDE = 258.0
+	AIR	= 331.5
+	HELIUM = 972.0
+	HYDROGEN = 1270.0
+
+4. Named constants for menu choices:
+
+	CARBON_DIOXIDE_CHOICE = 1
+	AIR_CHOICE = 2
+	HELIUM_CHOICE = 3
+	HYDROGEN_CHOICE	= 4
+
+5. Declare variables to hold non-constant values:
+
+	choice as an integer type to hold a menu choice selected by user.
+	distance as a floating point type to hold the distance entered by user
+	speed as a floating point type to hold the speed entered by user
+	time as a floating point type to hold the time entered by user
+
+6. Display the menu and get a choice:
+
+	Select one of the following gases:
+		 1. Carbon Dioxide
+		 2. Air
+		 3. Helium
+		 4. Hydrogen
+		 
+		 Enter your choice:
+	
+7. Set the numeric output formatting as fixed, with showpoint and set precision 
+   to 1 decimal digit right of the decimal point.
+
+8. If user choice is CARBON_DIOXIDE_CHOICE (option #1):
+
+			a. speed = CARBON_DIOXIDE
+			b. prompt user with: "Enter the number of seconds: "
+			c. get time from the keyboard
+
+			d. Validate the number of seconds.
+			if time >= MIN_SECONDS and time <= MAX_SECONDS then			
+				i. distance = speed * time
+				ii. Output "\nA sound wave travels " {distance} " meters in " 
+				iii. Output {time} " seconds through carbon dioxide.\n"
+			
+			e. Otherwise:
+			
+				i. Output "\nSeconds must be a number between " {MIN_SECONDS}
+				ii. Output " and " {MAX_SECONDS} ".\n"
+			
+9. Else if user choice is AIR_CHOICE (option #2): 
+			a. speed = AIR
+			b. Output "Enter the number of seconds: "
+			c. get time from the keyboard
+
+			d. Validate the number of seconds.
+			if time >= MIN_SECONDS and time <= MAX_SECONDS then			
+				i. distance = speed * time
+				ii. Output "\nA sound wave travels " {distance} " meters in " 
+				iii. Output {time} " seconds through air.\n"
+			
+			e. Otherwise:
+			
+				i. Output "\nSeconds must be a number between " {MIN_SECONDS}
+				ii. Output " and " {MAX_SECONDS} ".\n"
+
+10. Else if user choice is HELIUM_CHOICE (option #3): 
+			a. speed = HELIUM
+			b. Output "Enter the number of seconds: "
+			c. get time from the keyboard
+
+			d. Validate the number of seconds.
+			if time >= MIN_SECONDS and time <= MAX_SECONDS then			
+				i. distance = speed * time
+				ii. Output "\nA sound wave travels " {distance} " meters in " 
+				iii. Output {time} " seconds through helium.\n"
+			
+			e. Otherwise:
+			
+				i. Output "\nSeconds must be a number between " {MIN_SECONDS}
+				ii. Output " and " {MAX_SECONDS} ".\n"
+
+11. Else if user choice is HYDROGEN_CHOICE (option #4): 
+			a. speed = HYDROGEN
+			b. Output "Enter the number of seconds: "
+			c. get time from the keyboard
+
+			d. Validate the number of seconds.
+			if time >= MIN_SECONDS and time <= MAX_SECONDS then			
+				i. distance = speed * time
+				ii. Output "\nA sound wave travels " {distance} " meters in " 
+				iii. Output {time} " seconds through hydrogen.\n"
+			
+			e. Otherwise:
+			
+				i. Output "\nSeconds must be a number between " {MIN_SECONDS}
+				ii. Output " and " {MAX_SECONDS} ".\n"
+		
+12. Else:
+			a. Output "\nThe valid choices are 1 through 4. Run the\n"
+			b. Output "program again and select one of those.\n";
+	
